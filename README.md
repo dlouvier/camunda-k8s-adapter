@@ -20,6 +20,7 @@ http://camunda-service.default.svc.cluster.local:8080/engine-rest/
 - The ScaleUp and ScaleDown policies are defined on the Deployment configuration. By default it takes 300s to scale down.
 
 # How to test
+![Example HPA](hpa_example.jpg)
 - Describe the HorizontalPodAutoscaler resource:
 ```
 ➜  ~ kubectl -n default describe HorizontalPodAutoscaler
