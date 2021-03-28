@@ -52,7 +52,7 @@ spec:
       containers:
       - name: custom-metrics-apiserver
         image: docker.io/dlouvier/camunda-k8s-adapter:latest
-        #imagePullPolicy: Never
+        imagePullPolicy: Never
         args:
         - /adapter
         - --secure-port=6443
