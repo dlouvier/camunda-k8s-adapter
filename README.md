@@ -16,7 +16,8 @@ Just ran the Kubernetes resources manifests:
 # Notes
 - The resources will be deployed in custom-metrics namespace.
 - The Camunda API should be available on this URL:
-http://camunda-service.default.svc.cluster.local:8080/engine-rest/ 
+http://camunda-service.default.svc.cluster.local:8080/engine-rest/
+- The ScaleUp and ScaleDown policies are defined on the Deployment configuration. By default it takes 300s to scale down.
 
 # How to test
 - Describe the HorizontalPodAutoscaler resource:
